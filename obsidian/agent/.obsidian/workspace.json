@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "8898c3efc5a885d9",
+        "id": "53637c32f81368ff",
         "type": "tabs",
         "children": [
           {
-            "id": "7757e3f1e47422b3",
+            "id": "8647acc0007f6bbc",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "asyncio.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "asyncio"
             }
           }
         ]
@@ -79,7 +83,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "1851e0fca4986c27",
@@ -194,8 +199,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7757e3f1e47422b3",
+  "active": "8647acc0007f6bbc",
   "lastOpenFiles": [
-    "欢迎.md"
+    "asyncio.md",
+    "欢迎.md",
+    "未命名"
   ]
 }
