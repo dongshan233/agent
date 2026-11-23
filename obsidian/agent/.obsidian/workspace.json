@@ -83,8 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "1851e0fca4986c27",
@@ -199,8 +198,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8647acc0007f6bbc",
+  "active": "32416d72fc942c8e",
   "lastOpenFiles": [
+    "未命名 1",
     "asyncio.md",
     "欢迎.md",
     "未命名"
