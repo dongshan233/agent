@@ -18,6 +18,7 @@ def chat_stream(history:list[dict]) -> str:
         "messages":history,
         "temperature":0.7,
         "stream":True,
+        "stream_options":{"include_usage":True}#开启token统计
     }
     headers = {"Authorization":f"Bearer {KEY}"}
     full = ""
@@ -32,6 +33,12 @@ def chat_stream(history:list[dict]) -> str:
             data = line.removeprefix("data: ")
             if data == "[DONE]":
                 break
+            chunk = json.loads(data)
+            if not chunk:
+                continue
+            if chunk.get("usage"):
+                usage = chunk["usage"]
+                print(usage)
             choices =  json.loads(data)["choices"] or []
             if not choices:
                 continue
@@ -58,6 +65,9 @@ def main()->None:
         if user == "/clear":
             history=[{"role":"system","content":SYSTEM_PROMPT}]
             print("历史已清空")
+            continue
+        if user == "/history":
+            print(history)
             continue
         history.append({"role":"user","content":user})
         try:
