@@ -64,6 +64,7 @@ def stream_chat(messages,*,temperature=0,max_tokens=500,show_reasoning=True):
                 if content:
                     if in_reasoning:
                         if show_reasoning:
+                            print()
                             print("--回答--")
                         in_reasoning = False
                     content_parts.append(content)
